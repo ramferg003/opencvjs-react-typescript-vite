@@ -7,17 +7,11 @@ export default function App() {
   const imgRef: React.Ref<HTMLImageElement> = React.useRef(null);
   
   return (
-    <>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <h1>Blob Detection</h1>
 
-      <Webcam
-        ref={webcamRef}
-        className="camera"
-        mirrored
-        screenshotFormat="image/png"
-      />
       <img className="imageSource" alt="input" ref={imgRef} />
       <BlobDetector />
-    </>
+    </div>
   );
 }

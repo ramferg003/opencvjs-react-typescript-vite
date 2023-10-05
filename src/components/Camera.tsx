@@ -15,9 +15,11 @@ const Camera = () => {
             style={{
                 height,
                 width,
-                position: 'absolute',
+                visibility: "hidden",
             }}
             />
         </>
     )
 }
+
+export default Camera;
